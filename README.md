@@ -21,3 +21,9 @@ Le site sera entièrement réalisé en HTML/CSS/JS sans framework ou librairie e
 Tout mon processus de développement sera documenté sur ce github.
 
 Le code sera intégralement en Anglais.
+
+La police Proxima Nova a été remplacée par Figtree pour des raisons de licence
+
+## Ressources
+
+Icones : https://tablericons.com/
