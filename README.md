@@ -24,6 +24,10 @@ Le code sera intégralement en Anglais.
 
 La police Proxima Nova a été remplacée par Figtree pour des raisons de licence
 
+## Développement
+
+### Première étape : création d'un site fidèle à la maquette
+
 ## Ressources
 
 Icones : https://tablericons.com/
