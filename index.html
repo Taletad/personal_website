@@ -12,32 +12,34 @@
 
     <div id="menu" class="navbar">
         <ul class="nav-links">
-            <li><a href="#presentation">A propos</a></li>
-            <li><a href="#quotes">Quotes</a></li>
-            <li><a href="#skills">Profil</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#presentation" class="nav-link">A propos</a></li>
+            <li><a href="#quotes" class="nav-link">Quotes</a></li>
+            <li><a href="#skills" class="nav-link">Profil</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <hr id="progression-bar">
     </div>
 
     <div class="page-wrapper">
-        <section id="intro">
+        <section id="intro" class="">
             <div class="wrapper">
                 <div class="y-center x-center full-height">
                     <h1>Taddéo Capdeboscq</h1>
                 </div>
             </div>
+            <div class="blur"></div>
         </section>
 
-        <section id="presentation" class="">
+        <section id="presentation" class="padding-top-5">
             <div class="wrapper">
                 <div class="half-height y-center">
-                    <div class="">
-                        <h2>à propos</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit deleniti vitae unde inventore, enim, qui voluptatem sunt aperiam impedit nulla, maiores expedita laudantium labore? Dolorum, neque animi.</p>
+                    <div>
+                        <h2 class="scroll-animation appear-from-left">à propos</h2>
+                        <p class="scroll-animation appear-from-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit deleniti vitae unde inventore, enim, qui voluptatem sunt aperiam impedit nulla, maiores expedita laudantium labore? Dolorum, neque animi.</p>
                     </div>
                 </div>
-                <div class="half-height y-center x-center">
+                <div class="half-height y-center x-center scroll-animation appear-from-bottom scroll-animation-long">
                     <a href="#contact" class="button">
                         Me contacter
                     </a>
@@ -45,9 +47,9 @@
             </div>
         </section>
     
-        <section id="quotes" class="">
+        <section id="quotes" class="padding-top-5">
             <div class="half-height">
-                <div class="wrapper y-center dark">
+                <div class="wrapper y-center dark scroll-animation appear-from-left">
                     <p class="quotation">&laquo;</p>
                     <div class="quote justify-center">
                         <p class="quote-text">
@@ -62,7 +64,7 @@
             </div>
 
             <div class="half-height">
-                <div class="wrapper y-center">
+                <div class="wrapper y-center scroll-animation appear-from-right">
                     <p class="quotation">&laquo;</p>
                     <div class="quote justify-center">
                         <p class="quote-text">
@@ -77,25 +79,25 @@
             </div>
         </section>
 
-        <section id="skills" class="">
+        <section id="skills" class="padding-top-5">
             <div class="wrapper">
                 <div class="half-height y-center">
                     <div>
-                        <h2>Profil</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores recusandae sint fugiat, doloribus nihil veritatis. Sapiente consequuntur voluptate esse hic unde dolore eligendi doloribus harum culpa autem!</p>
+                        <h2 class="scroll-animation appear-from-left">Profil</h2>
+                        <p class="scroll-animation appear-from-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores recusandae sint fugiat, doloribus nihil veritatis. Sapiente consequuntur voluptate esse hic unde dolore eligendi doloribus harum culpa autem!</p>
                     </div>
                 </div>
-                <div class="half-height y-center">
+                <div class="half-height y-center scroll-animation appear-from-right">
                     <img src="images/rio.jpg" class="stock-image" alt="stock image">
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="">
+        <section id="projects" class="padding-top-5">
             <div class="wrapper y-center">
                 <div>
-                    <h2>Projets</h2>
-                    <div id="carousel-overlay" class="carousel">
+                    <h2 class="scroll-animation appear-from-left">Projets</h2>
+                    <div id="carousel-overlay" class="carousel scroll-animation appear-from-right">
                         <div class="carousel-scroller">
                             <img src="images/countryside.jpg" alt="project one" class="carousel-item">
                             <img src="images/hummer-road.jpg" alt="project two" class="carousel-item">
@@ -108,17 +110,17 @@
             </div>
         </section>
 
-        <section id="contact" class="">
+        <section id="contact" class="scroll-animation">
             <div class="wrapper">
                 <div class="full-height y-center">
                     <div>
-                        <h2>Contact</h2>
+                        <h2 class="scroll-animation appear-from-left">Contact</h2>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti consequatur aliquam, eveniet perferendis animi quis rerum delectus!</p>
+                        <p class="scroll-animation appear-from-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti consequatur aliquam, eveniet perferendis animi quis rerum delectus!</p>
                         
                         <form action="mailto:tadcap@gmail.com" method="get" enctype="text/plain" class="contact-form">
 
-                            <div class="flex-column">
+                            <div class="flex-column scroll-animation scroll-animation-long">
                                 <input type="text" name="subject" id="subject" placeholder="Sujet">
 
                                 <input type="email" name="email" id="email" placeholder="nom@courriel.com">
@@ -126,7 +128,7 @@
                                 <textarea name="message" id="message" rows="3">Message ...</textarea>
                             </div>
 
-                            <div class="x-center">
+                            <div class="x-center scroll-animation scroll-animation-long appear-from-bottom">
                                 <input type="submit" value="Envoyer" class="button">
                             </div>
                         </form>

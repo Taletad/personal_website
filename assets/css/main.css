@@ -35,16 +35,15 @@
     box-sizing: border-box;
 }
 
-html {
-    /*scroll-snap-type: y mandatory;
-    scroll-padding-top: 5.5vh;
-    -webkit-overflow-scrolling: touch;*/
-}
-
 body {
     color: #003153;
     font-family: Louis-Georges-Cafe, sans-serif;
     font-size: 1.2rem;
+}
+
+section {
+    width: 100vw;
+    overflow: hidden;
 }
 
 h2 {
@@ -59,11 +58,6 @@ p {
     padding-bottom: .5rem;
 }
 
-section {
-    width: 100vw;
-    /*scroll-snap-align: start;*/
-}
-
 img {
     width: 100%;
     height: 100%;
@@ -73,11 +67,12 @@ img {
     margin-bottom: .5rem;
 }
 
+/* elements */
+
 .hidden {
     display: none;
 }
 
-/* elements */
 .padding-top-5 {
     padding-top: 2.5rem;
 }
@@ -86,10 +81,36 @@ img {
     padding-bottom: 2.5rem;
 }
 
+.scroll-animation {
+    opacity: 0;
+    transition: 500ms;
+}
+
+.scroll-animation-long {
+    transition: 1000ms;
+}
+
+.appear-from-left {
+    transform: translateX(-100px);
+}
+
+.appear-from-right {
+    transform: translateX(100px);
+}
+
+.appear-from-bottom {
+    transform: translateY(75px);
+}
+
+.scroll-animation.show {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .wrapper {
     margin: 0;
     padding: 2rem;
-    width: 100vw;
     height: 100%;
 }
 
@@ -122,6 +143,15 @@ img {
     flex-direction: column;
 }
 
+.blur {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -132,9 +162,13 @@ img {
     display: inline-block;
 }
 
-.nav-links li a {
+.nav-link {
     text-decoration: none;
     color: #595959;
+}
+
+.nav-current {
+    color: #0B99E5 !important;
 }
 
 a.button {
@@ -150,7 +184,7 @@ a.button {
     margin-bottom: 2rem;
 }
 
-a.button:focus {
+a.button:focus, a.button:hover {
     background-color: #003153;
     color: white;
 }
@@ -253,7 +287,7 @@ a.button:focus {
     margin: 1rem 0rem;
 }
 
-.contact-form .button:focus {
+.contact-form .button:focus, .contact-form .button:hover {
     color: white;
     background-color: #003153;
 }
@@ -272,7 +306,7 @@ a.button:focus {
 
 /* Specific sections */
 #intro {
-    height: 100vh;
+    height: 90vh;
 }
 
 #menu {
@@ -284,7 +318,18 @@ a.button:focus {
     padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: white;
+    opacity: 0;
 }
+
+#progression-bar {
+    margin: 0;
+    height: 4px;
+    background-color: #0B99E5;
+    border: none;
+    transform: translateY(1vh);
+    width: 0;
+}
+
 #intro {
     font-family: Louis-Georges-Cafe-Light;
     font-weight: 100;
@@ -296,7 +341,7 @@ a.button:focus {
 }
 
 .footer-section {
-    width: 100vw;
+    width: 100%;
     position: relative;
     scroll-snap-align: start;
 }
